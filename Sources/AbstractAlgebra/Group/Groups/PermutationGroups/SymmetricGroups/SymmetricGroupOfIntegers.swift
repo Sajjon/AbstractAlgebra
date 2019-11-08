@@ -9,6 +9,14 @@
 import Foundation
 
 // MARK: SymmetricGroupOfIntegers
+
+/// In abstract algebra, the symmetric group defined over any set is the group
+/// whose elements are all the bijections from the set to itself, and whose
+/// group operation is the composition of functions. In particular, the finite
+/// symmetric group Sn defined over a finite set of n symbols consists of the
+/// permutation operations that can be performed on the n symbols.
+///
+/// [wiki]: https://en.wikipedia.org/wiki/Symmetric_group
 public struct SymmetricGroupOfIntegers: FiniteSymmetricGroup {
     public typealias PermutationElement = Int
     public typealias Permutation = OrderedSet<PermutationElement>

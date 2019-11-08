@@ -36,6 +36,7 @@ class SymmetricGroupsTest: XCTestCase {
             S5.isElementInGroup(S5.oneLine([1, 2, 3, 4, 5, 6]))
         )
     }
+
     func testInverseOfSymmetricGroup() {
         let f = S5.oneLine([3, 2, 1, 5, 4])
 

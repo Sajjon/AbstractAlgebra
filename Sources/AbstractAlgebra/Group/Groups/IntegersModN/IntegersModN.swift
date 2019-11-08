@@ -8,6 +8,9 @@
 
 import Foundation
 
+/// N non-negative integers form a group under multiplication modulo n, called the multiplicative group of [integers modulo n][wiki]
+///
+/// [wiki]: https://en.wikipedia.org/wiki/Multiplicative_group_of_integers_modulo_n
 public struct IntegersModN: FiniteCyclicGroup, ModularGroup, Equatable {
     public let modulus: (IntegersModN, Element) -> Element
     public let order: Int
